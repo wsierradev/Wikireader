@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Oswald');
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translate(-50%, -105%) ;
+
+  }
+  100% {
+    transform: translate(-50%, 105%) ;
+
+  }
+}
+
+* {
+	font-family: 'Oswald', sans-serif;
+
+}
+body {
+	background: url('https://i.imgur.com/jaDAv3w.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+div {
+	-webkit-transition: -webkit-transform 0.9s ease-in-out;
+}
+
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited { 
+	color: white; 
+}
+.container {
+	width: 60vw;
+	background: black;
+ 	color: white; 
+ 	border-radius: 1.5em; 
+ 	padding: 1em; 
+ 	position: relative; 
+ 	left: 50%;
+  	margin-right: -50%;
+ 	transform: translate(-50%, 105%) ; 
+ 	animation: 0.75s ease-out 0s 1 slideInFromTop;
+}
+
+.container * {
+	text-align: center;
+    margin: 0 auto;
+    width: 100%;
+font-family: 'Oswald', sans-serif;
+
+}
+
+#searchfield {
+	border-radius: 1em;
+	background-color: black;
+	color: white;
+	font-size: 1.1em;
+}
+
+#searchfield:focus {
+    outline: none !important;
+    border:2px solid white;
+    box-shadow: 0 0 50px gray;
+}
+
+#button {
+	background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translate(450%, -150%);
+    width: 10%;
+    border-radius: 1em;
+}
+
+.anim {
+transform: translate(-50%, -10%)
+}
+
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: 44%;
+    top: -30px;
+    cursor: pointer;
+    width: 0;
+}
+
+#result_msg {
+
+	width: 30vw;
+	height: auto;
+	background: black;
+	color: white;
+	border-radius: 1.5em;
+	padding: 1em;
+	position: relative;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -16%);
+	text-align: center;
+}
+
+.result:hover {
+ 	border: 1px solid white;
+}
+
+.result {
+	z-index: 1;
+	width: 80vw;
+	height: auto;
+	background: black;
+    color: white;
+    border-radius: .5em;
+    padding: 1em;
+    position: relative;
+	margin : 0 auto 1em auto;
+	display: -webkit-box;      /* For old iOS 6, Safari 3.1-6 */
+ 	display: -moz-box;         /* For old Firefox 19 */
+ 	display: -ms-flexbox;      /* For - IE 10 */
+ 	display: -webkit-flex;     /* For - Chrome */
+ 	display: flex;             /* For IE 11, Spec - Opera 12.1, Firefox 20+ */
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: right;
+}
+ 
+
